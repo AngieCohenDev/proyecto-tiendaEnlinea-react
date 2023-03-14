@@ -60,48 +60,48 @@ function App() {
           <div className="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
             {/* Card */}
             <Card
+              img="javascript.jpeg"
+              titulo="Js Beginner "
+              description="Javascript para principiantes"
+              link=""
+            />
+            {/* Card */}
+            <Card
+              img="git-hub-log.png"
+              titulo="GitHub Curso"
+              description="Curso facil de GitHub"
+              link=""
+            />
+            {/* Card */}
+            <Card
+              img="comida.png"
+              description="Speacy seasoned seafood noodles"
+              link=""
+              inventory="20"
+            />
+            {/* Card */}
+            <Card
               img="comida.png"
               description="Speacy seasoned seafood noodles"
               price="2.29"
               inventory="20"
             />
-              {/* Card */}
-              <Card
+            {/* Card */}
+            <Card
               img="comida.png"
               description="Speacy seasoned seafood noodles"
               price="2.29"
               inventory="20"
             />
-              {/* Card */}
-              <Card
+            {/* Card */}
+            <Card
               img="comida.png"
               description="Speacy seasoned seafood noodles"
               price="2.29"
               inventory="20"
             />
-              {/* Card */}
-              <Card
-              img="comida.png"
-              description="Speacy seasoned seafood noodles"
-              price="2.29"
-              inventory="20"
-            />
-              {/* Card */}
-              <Card
-              img="comida.png"
-              description="Speacy seasoned seafood noodles"
-              price="2.29"
-              inventory="20"
-            />
-              {/* Card */}
-              <Card
-              img="comida.png"
-              description="Speacy seasoned seafood noodles"
-              price="2.29"
-              inventory="20"
-            />
-              {/* Card */}
-              <Card
+            {/* Card */}
+            <Card
               img="comida.png"
               description="Speacy seasoned seafood noodles"
               price="2.29"
