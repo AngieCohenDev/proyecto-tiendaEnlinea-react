@@ -26,7 +26,7 @@ function App() {
     setShowMenu(false);
   };
   return (
-    <div className="bg-[#262837] w-full min-h-screen">
+    <div className="bg-[#2c2e3b] w-full min-h-screen">
       <Sidebar showMenu={showMenu} />
       <Carrito showOrder={showOrder} setShowOrder={setShowOrder} />
       {/*Menu movil*/}

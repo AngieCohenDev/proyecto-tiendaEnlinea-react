@@ -25,10 +25,21 @@ function Header() {
       <nav className="text-gray-300 flex items-center justify-between mb:justify-start mb:gap-8 border-b mb-10">
         <a
           href="#"
-          className=" relative py-2 pr-4 before:w-1/2 before:h-1 before:absolute before:bg-[#ec7c6a] before:left-0 before:rounded-full before:-bottom-[2px] text-[#ec7c6a]"
+          className=" relative py-2 pr-4 before:w-1/2 before:h-1 before:absolute before:bg-blue-300 before:left-0 before:rounded-full before:-bottom-[2px] text-blue-300 "
         >
           Hot Dishes
-        </a>
+        </a>                                                                                                                 
+
+
+
+
+
+
+
+
+
+
+        
         <a href="#" className="py-2 pr-4">
           Cold Dishes
         </a>
