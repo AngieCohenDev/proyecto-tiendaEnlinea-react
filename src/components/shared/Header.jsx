@@ -7,8 +7,8 @@ function Header() {
       {/*Title and search */}
       <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-6">
         <div>
-          <h1 className="text-2xl text-gray-300">Camila Resto</h1>
-          <p className="text-gray-500">10 de marzo 2023</p>
+          <h1 className="text-2xl text-gray-300">ACADEMIT S.A.S</h1>
+          <p className="text-gray-500">Programando la élite del mañana, hoy</p>
         </div>
         <form>
           <div className="w-full relative">
@@ -21,35 +21,6 @@ function Header() {
           </div>
         </form>
       </div>
-      {/* Tabs*/}
-      <nav className="text-gray-300 flex items-center justify-between mb:justify-start mb:gap-8 border-b mb-10">
-        <a
-          href="#"
-          className=" relative py-2 pr-4 before:w-1/2 before:h-1 before:absolute before:bg-blue-300 before:left-0 before:rounded-full before:-bottom-[2px] text-blue-300 "
-        >
-          Hot Dishes
-        </a>                                                                                                                 
-
-
-
-
-
-
-
-
-
-
-        
-        <a href="#" className="py-2 pr-4">
-          Cold Dishes
-        </a>
-        <a href="#" className=" py-2 pr-4">
-          Soup
-        </a>
-        <a href="#" className="py-2 pr-4">
-          Grill
-        </a>
-      </nav>
     </header>
   );
 }

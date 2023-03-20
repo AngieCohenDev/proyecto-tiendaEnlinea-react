@@ -11,6 +11,7 @@ import Sidebar from "./components/shared/Sidebar";
 import Carrito from "./components/shared/Carrito";
 import Header from "./components/shared/Header";
 import Card from "./components/Card";
+import ReactPlayer from "react-player";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -49,65 +50,38 @@ function App() {
           {/*Este es el header */}
           <Header />
           {/* Title Content */}
-          <div className="flex items-center justify-between mb-16">
-            <h2 className="text-xl text-gray-300">Choose Dishes</h2>
-            <button className="flex items-center gap-4 text-black bg-blue-200 py-2 px-4 rounded-lg ">
-              <RiArrowDownSLine />
-              Dine in
-            </button>
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="text-2xl text-gray-300">Curso de JavaScript</h2>
+            
           </div>
           {/* Content */}
-          <div className="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+          <div className="p-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-16">
             {/* Card */}
             <Card
-              img="javascript.jpeg"
-              titulo="Js Beginner "
+              video=""
+              titulo="Clase #21 Metodos para recorrer Arrays en JavaScript"
               description="Javascript para principiantes"
               link=""
             />
-            {/* Card */}
-            <Card
-              img="git-hub-log.png"
-              titulo="GitHub Curso"
-              description="Curso facil de GitHub"
-              link=""
-            />
-            {/* Card */}
-            <Card
-              img="comida.png"
-              description="Speacy seasoned seafood noodles"
-              link=""
-              inventory="20"
-            />
-            {/* Card */}
-            <Card
-              img="comida.png"
-              description="Speacy seasoned seafood noodles"
-              price="2.29"
-              inventory="20"
-            />
-            {/* Card */}
-            <Card
-              img="comida.png"
-              description="Speacy seasoned seafood noodles"
-              price="2.29"
-              inventory="20"
-            />
-            {/* Card */}
-            <Card
-              img="comida.png"
-              description="Speacy seasoned seafood noodles"
-              price="2.29"
-              inventory="20"
-            />
-            {/* Card */}
-            <Card
-              img="comida.png"
-              description="Speacy seasoned seafood noodles"
-              price="2.29"
-              inventory="20"
-            />
           </div>
+          {/* Tabs*/}
+          <nav className="text-gray-300 flex items-center justify-between border-b mb-10">
+            <a
+              href="#"
+              className=" relative py-2 pr-4 before:w-1/2 before:h-1 before:absolute before:bg-[#ec7c6a] before:left-0 before:rounded-full before:-bottom-[2px] text-[#ec7c6a]"
+            >
+              Comentarios
+            </a>
+            <a href="#" className="py-2 pr-4">
+            Descripción del Curso
+            </a>
+            <a href="#" className=" py-2 pr-4">
+              Recursos
+            </a>
+            <a href="#" className="py-2 pr-4">
+            Valoración 
+            </a>
+          </nav>
         </div>
       </main>
     </div>
