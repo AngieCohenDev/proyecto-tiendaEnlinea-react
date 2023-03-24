@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   RiHomeSmileLine,
   RiUser2Line,
@@ -11,6 +11,11 @@ import {
 
 const Sidebar = (props) => {
   const { showMenu } = props;
+  const { isClose, setIsClose } = useState(false);
+
+  const isCloseHandler = () => {
+    console.log("Cerrar sesión");
+  };
 
   return (
     <div
@@ -78,12 +83,12 @@ const Sidebar = (props) => {
       <div>
         <ul>
           <li className="hover:bg-[#262837] p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
-            <a
-              href="#"
+            <button
               className="group-hover:bg-blue-300 p-4 flex justify-center rounded-xl text-[#ec7c6a] group-hover:text-white transition-colors"
+              onClick={isCloseHandler}
             >
               <RiLogoutBoxLine className="text-2xl" />
-            </a>
+            </button>
           </li>
         </ul>
       </div>

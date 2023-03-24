@@ -26,6 +26,8 @@ function App() {
     setShowOrder(!showOrder);
     setShowMenu(false);
   };
+
+  console.log(showOrder,showMenu);
   return (
     <div className="bg-[#2c2e3b] w-full min-h-screen">
       <Sidebar showMenu={showMenu} />
@@ -45,7 +47,7 @@ function App() {
           {showMenu ? <RiCloseLine /> : <RiMenu2Fill />}
         </button>
       </nav>
-      <main className="lg:pl-32 lg:pr-96  pb-20">
+      <main className="lg:pl-32 lg:pr-  pb-20">
         <div className=" md:p-8 p-4">
           {/*Este es el header */}
           <Header />
@@ -58,7 +60,7 @@ function App() {
           <div className="p-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-16">
             {/* Card */}
             <Card
-              video=""
+              video="./VideoDeprueba.mp4"
               titulo="Clase #21 Metodos para recorrer Arrays en JavaScript"
               description="Javascript para principiantes"
               link=""

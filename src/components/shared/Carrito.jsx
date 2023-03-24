@@ -3,16 +3,19 @@ import { RiCloseLine, RiDeleteBin5Line } from "react-icons/ri";
 
 const Carrito = (props) => {
   const { showOrder, setShowOrder } = props;
+  const closeCar = () => {
+    setShowOrder(false)
+  }
   return (
     <div
-      className={`lg:col-spam-2 fixed  top-0 bg-[#39393b]  w-full  lg:w-96 lg:right-0 h-full transition-all z-50 ${
+      className={`lg:col-spam-2 fixed  top-0 bg-[#39393b]  w-full  lg:w-96 lg:-right-full h-full transition-all z-50 ${
         showOrder ? "right-0" : "-right-full"
-      }`}
+      }  `}
     >
       {/*Orders */}
       <div className="relative pt-16 text-gray-300 p-8 h-full">
         <RiCloseLine
-          onClick={() => setShowOrder(false)}
+          onClick={closeCar}
           className="absolute left-4 top-4 p-3 box-content texte-gray-300 bg-[#464545] rounded-full text-xl"
         />
         <h1 className="text-2xl my-4 ">Contenido del curso</h1>
